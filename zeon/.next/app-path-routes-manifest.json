@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/indian-cinema/page": "/indian-cinema",
+  "/page": "/",
+  "/settings/page": "/settings",
+  "/providers/page": "/providers",
+  "/providers/[provider]/page": "/providers/[provider]",
+  "/sports/page": "/sports",
+  "/watch/[type]/[id]/page": "/watch/[type]/[id]"
+}

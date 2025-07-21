@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/indian-cinema/page": "app/indian-cinema/page.js",
+  "/live-sports/[sport]/[id]/page": "app/live-sports/[sport]/[id]/page.js",
+  "/live-sports/page": "app/live-sports/page.js",
+  "/movies/page": "app/movies/page.js",
+  "/page": "app/page.js",
+  "/providers/[provider]/page": "app/providers/[provider]/page.js",
+  "/sports/page": "app/sports/page.js",
+  "/tv/page": "app/tv/page.js",
+  "/watch/[type]/[id]/page": "app/watch/[type]/[id]/page.js"
+}
