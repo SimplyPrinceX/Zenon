@@ -7,11 +7,20 @@ import { getImageUrl, Movie } from "../../lib/getImageUrl";
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
 import { motion } from "framer-motion";
 import { IconBookmark } from "@tabler/icons-react";
+import { Suspense } from "react";
 
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || "1070730380f5fee0d87cf0382670b255";
 const TMDB_BASE = "https://api.themoviedb.org/3";
 
-export default function IndianCinemaPage() {
+export default function IndianCinemaPageWrapper() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <IndianCinemaPage />
+    </Suspense>
+  );
+}
+
+function IndianCinemaPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const page = parseInt(searchParams.get("page") || "1", 10);
