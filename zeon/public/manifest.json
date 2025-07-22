@@ -1,0 +1,22 @@
+{
+  "name": "Nova Streaming",
+  "short_name": "Nova",
+  "description": "Watch movies, TV, anime, and sports in a beautiful glassmorphic UI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#a855f7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
