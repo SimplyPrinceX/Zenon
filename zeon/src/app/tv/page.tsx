@@ -118,8 +118,6 @@ export default function TVPage() {
       {/* Pagination */}
       <div className="flex justify-center items-center gap-4 mt-10">
         <LiquidButton
-          variant="default"
-          size="icon"
           className="rounded-full"
           onClick={() => goToPage(page - 1)}
           disabled={page <= 1}
@@ -129,8 +127,6 @@ export default function TVPage() {
         </LiquidButton>
         <span className="text-white font-bold">Page {page}</span>
         <LiquidButton
-          variant="default"
-          size="icon"
           className="rounded-full"
           onClick={() => goToPage(page + 1)}
           aria-label="Next page"

@@ -350,7 +350,7 @@ export default function Home() {
       <div className="flex gap-4 overflow-x-auto py-4 px-1 scrollbar-thin scrollbar-thumb-cyan-400/30 scrollbar-track-transparent">
         {providers.map((p) => (
           <Link key={p.slug} href={`/providers/${p.slug}`} className="min-w-[128px] min-h-[56px]">
-            <LiquidButton variant="default" size="icon" className="!p-0 w-32 h-14 flex items-center justify-center">
+            <LiquidButton className="!p-0 w-32 h-14 flex items-center justify-center">
               <Image src={p.logo} alt={p.name} width={40} height={40} className="rounded-full object-contain" />
             </LiquidButton>
           </Link>
