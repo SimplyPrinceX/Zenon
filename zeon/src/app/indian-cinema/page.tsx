@@ -12,15 +12,15 @@ import { Suspense } from "react";
 const TMDB_API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || "1070730380f5fee0d87cf0382670b255";
 const TMDB_BASE = "https://api.themoviedb.org/3";
 
-export default function IndianCinemaPageWrapper() {
+export default function MoviesPageWrapper() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <IndianCinemaPage />
+      <MoviesPage />
     </Suspense>
   );
 }
 
-function IndianCinemaPage() {
+function MoviesPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const page = parseInt(searchParams.get("page") || "1", 10);
